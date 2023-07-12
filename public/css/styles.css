@@ -1,0 +1,172 @@
+
+.logo{
+    height:50px;
+    /* display:inline-block; */
+   
+}
+.navigation{
+    margin: 0 auto;
+}
+nav button{
+    margin: 0 10px
+}
+ 
+nav ul{
+    color: white;
+    list-style: none;
+    margin: 0 auto;
+}
+nav ul li{
+    margin: 0 3px;
+    color: white;
+}
+ 
+.nav-link{
+    color: white!important
+}
+.navExternalContent{
+    height:100vh;
+    text-align: center;
+}
+
+nav form{
+    display: flex;
+    margin: auto auto;
+}
+
+
+.menuList{
+    display: block;
+    margin: 100px auto
+}
+
+@media screen and (max-width: 515px) {
+    .navList{
+      display: none;
+    }
+
+    nav form{
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px 
+    }
+
+    .logo{
+        margin-right: auto;
+        height: 50px;
+
+    }
+  }
+
+  @media screen and (max-width: 775px) {
+    /* .navList{
+      display: none;
+    } */
+
+    nav form{
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px 
+    }
+
+    .logo{
+        margin-right: auto;
+        height: 50px;
+
+    }
+  }
+
+  @media screen and (max-width: 1075px) {
+    /* .navList{
+      display: none;
+    } */
+
+    nav form{
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px 
+    }
+
+    .logo{
+        margin-right: auto;
+        height: 50px;
+
+    }
+  }
+
+
+  /* mainContent area */
+
+  .smallImgs{
+    width: 100%;
+}
+
+.mainContentSection{
+    margin: 50px auto;
+}
+
+.listArticles{
+    margin:3px auto
+}
+
+
+/* Footer */
+
+footer{
+    color:white;
+    padding: 50px
+}
+
+
+/* Misc */
+
+.timeStamp{
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+
+
+/*main article*/
+
+.mainArticleContainer{
+    margin-top: 100px;
+}
+.mainArticleImg{
+    width: 100%
+}
+
+.articleContent{
+    margin-top: 20px
+}
+
+.link{
+    text-decoration: none;
+    color:black
+}
+ .link:hover{
+    text-decoration: underline;
+ }
+
+
+
+ /* Sports Layout */
+ .sportsThumbnails{
+    width: 100%;
+    margin-bottom:2px
+ }
+
+ .sportsUnorderedList{
+    margin-top:30px;
+    margin-bottom: 30px
+ }
+
+ .sportsUnorderedList .row{
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+
+ }
+
+ .articleThumbnail{
+    width: 100%;
+ }
