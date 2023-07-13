@@ -12,34 +12,6 @@ import Business from "./pages/Business";
 
 function App() {
   const categories = ["top-news", "sports", "technology", "business"];
-  // const [topHeadlines, setTopHeadlines] = useState(headlines);
-
-  // useEffect(() => {
-  //   const getTopHeadlines = async () => {
-  //     const options = {
-  //       method: "GET",
-  //       url: "https://newsdata2.p.rapidapi.com/news",
-  //       params: {
-  //         category: "top",
-  //         language: "en",
-  //       },
-  //       headers: {
-  //         "X-RapidAPI-Key":
-  //           "f4308a98b7msha30c41cceb2e235p131387jsn8c00740694ca",
-  //         "X-RapidAPI-Host": "newsdata2.p.rapidapi.com",
-  //       },
-  //     };
-
-  //     try {
-  //       const response = await axios.request(options);
-  //       console.log(response.data.results);
-  //       setTopHeadlines(response.data.results);
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //   };
-  //   getTopHeadlines();
-  // });
 
   return (
     <BrowserRouter>
