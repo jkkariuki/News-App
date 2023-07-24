@@ -1,6 +1,664 @@
 const sportsHeadlines = [
   {
     source: {
+      id: null,
+      name: "Cyclingnews.com",
+    },
+    author: "Stephen Farrand",
+    title:
+      "As it happened: Jonas Vingegaard celebrates Tour de France victory as Meeus wins Champs Elysees sprint - Cyclingnews",
+    description: "Riders celebrate completing three weeks of Grand Tour racing",
+    url: "https://www.cyclingnews.com/races/tour-de-france-2023/stage-21/live-report/",
+    urlToImage:
+      "https://cdn.mos.cms.futurecdn.net/ovE5XGgX6ZVjNhDYJkarGR-1200-80.jpg",
+    publishedAt: "2023-07-23T18:55:30Z",
+    content:
+      "2023-07-23T18:55:30.352ZIt's been a privilege to bring you the full Cyclingnews coverage of the Tour de France yet again. But there so much more racing to come in 2023.\r\nMerci et à bientôt!    Vive l… [+21555 chars]",
+  },
+  {
+    source: {
+      id: "espn",
+      name: "ESPN",
+    },
+    author: "Adam Teicher",
+    title: "Chiefs WR Toney leaves practice with knee injury - ESPN",
+    description:
+      "Kansas City Chiefs top WR Kadarius Toney left prior to the start of practice with a knee injury that he suffered returning a punt before some of his teammates had even arrived on the field.",
+    url: "https://www.espn.com/nfl/story/_/id/38059421/chiefs-wr-kadarius-toney-leaves-practice-knee-injury",
+    urlToImage:
+      "https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2023%2F0723%2Fr1201293_1023x575_16%2D9.jpg",
+    publishedAt: "2023-07-23T18:50:00Z",
+    content:
+      "ST. JOSEPH, Mo. -- Training camp for Kansas City Chiefs wide receiver Kadarius Toney got off to an ominous start Sunday when he left the field prior to the start of the first practice because of a kn… [+1413 chars]",
+  },
+  {
+    source: {
+      id: "al-jazeera-english",
+      name: "Al Jazeera English",
+    },
+    author: "Euan Marshall",
+    title:
+      "Brazilian star Marta and her last chance at World Cup glory - Al Jazeera English",
+    description:
+      "The World Cup has been a major gap in the glittering resume of Marta Vieira da Silva’s glittering 23-year career.",
+    url: "https://www.aljazeera.com/sports/2023/7/23/brazil-marta-and-her-last-chance-at-world-cup-glory",
+    urlToImage:
+      "https://www.aljazeera.com/wp-content/uploads/2023/07/2023-07-02T153507Z_482695158_UP1EJ7217AHGT_RTRMADP_3_SOCCER-FRIENDLY-BRA-CHL-REPORT-1690106132.jpg?resize=1920%2C1440",
+    publishedAt: "2023-07-23T18:38:19Z",
+    content:
+      "Sao Paulo, Brazil If Marta comes off the bench and takes to the field for Brazils Womens World Cup opener against Panama on Monday, it would mark her sixth and final involvement in the premier compet… [+6386 chars]",
+  },
+  {
+    source: {
+      id: null,
+      name: "Espn.com.sg",
+    },
+    author: "Paolo Uggetti",
+    title:
+      "Rory McIlroy can't capitalize on early birdies as drought persists - ESPN - ESPN",
+    description:
+      "Rory McIlroy made three birdies over the first six holes Sunday, but any glimmer of hope for a comeback and a win for the ages vanished over the next 12 holes.",
+    url: "https://www.espn.com.sg/golf/story/_/id/38059200/rory-mcilroy-capitalize-early-birdies-drought-persists",
+    urlToImage:
+      "https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2023%2F0723%2Fr1201275_1296x729_16%2D9.jpg",
+    publishedAt: "2023-07-23T18:19:34Z",
+    content:
+      "HOYLAKE, England -- Rory McIlroy tried again, but it wasn't enough.\r\nNine shots out of the lead entering Sunday, the four-time major winner began his final round by making three birdies in the first … [+3405 chars]",
+  },
+  {
+    source: {
+      id: null,
+      name: "Pitcherlist.com",
+    },
+    author: "Nick Pollack",
+    title:
+      "Fantasy Baseball SP Roundup - Taking Down The Houser - Pitcher List",
+    description:
+      "Nick Pollack reviews every starting pitcher performance from Saturday.",
+    url: "https://www.pitcherlist.com/sp-roundup-7-22-23/",
+    urlToImage:
+      "https://www.pitcherlist.com/wp-content/uploads/2023/07/2023.07.22-SP-Roundup-Adrian-Houser.jpg",
+    publishedAt: "2023-07-23T18:02:55Z",
+    content:
+      "Welcome to the SP Roundup, my daily fantasy baseball article reviewing every starting pitcher’s performance from every Saturday game. I apologize for the jokes written in my delirium in advance. Have… [+15644 chars]",
+  },
+  {
+    source: {
+      id: null,
+      name: "Motorsport.com",
+    },
+    author: "James Newbold",
+    title:
+      'Zhou\'s Hungarian GP "pretty much over" after "strange" Alfa F1 start glitch - Motorsport.com',
+    description:
+      'Zhou Guanyu says his "strange" Hungarian Grand Prix startline glitch meant his chance of scoring Formula 1 points "was pretty much over" before the Alfa Romeo driver\'s Turn 1 incident.',
+    url: "https://www.motorsport.com/f1/news/zhous-hungarian-gp-pretty-much-over-after-strange-alfa-f1-start-glitch/10499369/",
+    urlToImage:
+      "https://cdn-5.motorsport.com/images/amp/Y99QKmbY/s6/formula-1-hungarian-gp-2023-ge-2.jpg",
+    publishedAt: "2023-07-23T17:56:13Z",
+    content:
+      "The Chinese racer managed his best F1 qualifying effort to date on Saturday to start fifth but was swamped by the pack after a sluggish getaway, before running into the back of Daniel Ricciardo's Alp… [+3080 chars]",
+  },
+  {
+    source: {
+      id: null,
+      name: "YouTube",
+    },
+    author: null,
+    title:
+      "🇯🇵 JPN vs. 🇮🇹 ITA - Highlights Final 3-4 | Men's VNL 2023 - Volleyball World",
+    description:
+      "🔴  Volleyball Nations League LIVE on Volleyball TV: https://go.volleyball.world/TV?ytv=dWatch the Men's highlights between Japan and Italy from the Final 3-...",
+    url: "https://www.youtube.com/watch?v=yY9sGMIl5Uw",
+    urlToImage: "https://i.ytimg.com/vi/yY9sGMIl5Uw/maxresdefault.jpg",
+    publishedAt: "2023-07-23T17:52:44Z",
+    content: null,
+  },
+  {
+    source: {
+      id: null,
+      name: "CBS Sports",
+    },
+    author: null,
+    title:
+      "2023 NASCAR at Pocono odds, predictions, lineup, start time: Model makes surprising HighPoint 400 race picks - CBS Sports",
+    description:
+      "SportsLine simulated the NASCAR Cup Series' 2023 HighPoint.com 400 at Pocono Raceway 10,000 times",
+    url: "https://www.cbssports.com/nascar/news/2023-nascar-at-pocono-odds-predictions-lineup-start-time-model-makes-surprising-highpoint-400-race-picks/",
+    urlToImage:
+      "https://sportshub.cbsistatic.com/i/r/2023/02/19/34bbfc89-baa3-4cf5-b512-cd3b9c939b3d/thumbnail/1200x675/a9b8bd954591ba254e93ce8a4b0e5a1c/nascar-usatsi.jpg",
+    publishedAt: "2023-07-23T17:34:25Z",
+    content:
+      "Pocono Raceway will host Sunday's NASCAR Cup Series race, the 2023 HighPoint.com 400. The green flag drops at 2:30 p.m. ET, when Joe Gibbs Racing will try to maintain its spot at the top of the NASCA… [+4696 chars]",
+  },
+  {
+    source: {
+      id: "usa-today",
+      name: "USA Today",
+    },
+    author: "Charles Goldman",
+    title:
+      "Andy Reid, Clark Hunt discuss Chris Jones' absence from Chiefs training camp - Chiefs Wire",
+    description:
+      "Both #Chiefs HC Andy Reid and CEO Clark Hunt were asked about Chris Jones’ holdout following Sunday’s training camp practice.",
+    url: "https://chiefswire.usatoday.com/2023/07/23/kansas-city-chiefs-andy-reid-clark-hunt-chris-jones-training-camp-holdout/",
+    urlToImage:
+      "https://chiefswire.usatoday.com/wp-content/uploads/sites/70/2022/08/7a35fa261e2b45469b811c0c2f041122.jpg?w=1024&h=576&crop=1",
+    publishedAt: "2023-07-23T17:33:00Z",
+    content:
+      "The Kansas City Chiefs nearly had a full house on Sunday, with only four players absent from their first training camp practice.\r\nOne of those players, veteran DT Chris Jones, has not yet reported fo… [+2135 chars]",
+  },
+  {
+    source: {
+      id: null,
+      name: "Motorsport.com",
+    },
+    author: "Jonathan Noble",
+    title:
+      "McLaren insists Norris Hungary F1 strategy call not favouritism - Motorsport.com",
+    description:
+      "McLaren insists the strategy call that helped Lando Norris use an undercut to overtake team-mate Oscar Piastri at Formula 1’s Hungarian Grand Prix was not a case of favouritism.",
+    url: "https://www.motorsport.com/f1/news/mclaren-insists-norris-hungary-f1-strategy-call-not-favouritism/10499355/",
+    urlToImage:
+      "https://cdn-8.motorsport.com/images/amp/0ZRK7KM0/s6/lando-norris-mclaren-mcl60-1.jpg",
+    publishedAt: "2023-07-23T17:27:45Z",
+    content:
+      "Piastri was running second behind race leader Max Verstappen in the early stages at the Hungaroring when at the first stops the team elected to pit third-placed Norris.\r\nThe extra pace that Norris go… [+2573 chars]",
+  },
+  {
+    source: {
+      id: null,
+      name: "MLB.com",
+    },
+    author: "Bryan Hoch",
+    title: "Aaron Judge takes batting practice at Yankee Stadium - MLB.com",
+    description:
+      "NEW YORK -- The scouting report was crystal clear as Jonathan Loáisiga examined the 6-foot-7 frame of Aaron Judge on Sunday morning, digging in for his first at-bats against game-speed pitching since June 3. Absolutely, positively nothing inside.\nLoáisiga and…",
+    url: "https://www.mlb.com/news/aaron-judge-takes-batting-practice-at-yankee-stadium",
+    urlToImage:
+      "https://img.mlbstatic.com/mlb-images/image/upload/t_2x1/t_w1536/mlb/xwqjedvv6xez1cwjptdg.jpg",
+    publishedAt: "2023-07-23T17:15:00Z",
+    content:
+      "NEW YORK -- The scouting report was crystal clear as Jonathan Loáisiga examined the 6-foot-7 frame of Aaron Judge on Sunday morning, digging in for his first at-bats against game-speed pitching since… [+2851 chars]",
+  },
+  {
+    source: {
+      id: null,
+      name: "Yahoo Entertainment",
+    },
+    author: "Callie Lawson-Freeman",
+    title:
+      "Report: Jimmy Garoppolo passes Raiders training camp physical, avoids PUP list - Yahoo Sports",
+    description:
+      "Garoppolo reportedly underwent foot surgery and spent his offseason recovering from the injury.",
+    url: "https://sports.yahoo.com/report-jimmy-garoppolo-passes-raiders-training-camp-physical-avoids-pup-list-170602788.html",
+    urlToImage:
+      "https://s.yimg.com/ny/api/res/1.2/6LM9Uy_AqpTP6iQChEeFWg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2023-07/0ceeab90-2973-11ee-b5f3-b7eb7b195d39",
+    publishedAt: "2023-07-23T17:06:02Z",
+    content:
+      "The Las Vegas Raiders begin training camp Tuesday and it appears the team's new quarterback will be able to join his teammates on the field, after all.\r\nJimmy Garoppolo passed his training camp physi… [+2119 chars]",
+  },
+  {
+    source: {
+      id: "espn",
+      name: "ESPN",
+    },
+    author: null,
+    title:
+      "Star NFL RBs meet on Zoom to talk financial state of position - ESPN - ESPN",
+    description:
+      "Several star NFL running backs took part in a Zoom call Saturday to discuss the depressed market for players at their position.",
+    url: "https://www.espn.com/nfl/story/_/id/38058656/star-nfl-rbs-meet-zoom-talk-state-position",
+    urlToImage:
+      "https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2018%2F1019%2Fr449526_3_1296x729_16%2D9.jpg",
+    publishedAt: "2023-07-23T16:52:00Z",
+    content:
+      "Jul 23, 2023, 12:52 PM ET\r\nSeveral star NFL running backs took part in a Zoom call Saturday to discuss the depressed market for players at their position.\r\nCleveland Browns running back Nick Chubb co… [+2965 chars]",
+  },
+  {
+    source: {
+      id: null,
+      name: "Pitcherlist.com",
+    },
+    author: "Nick Pollack",
+    title:
+      "Starting Pitcher Streamer Rankings Fantasy Baseball - 7/23 & 7/24 - Pitcher List",
+    description:
+      "Nick Pollack ranks the starting pitcher streamers for today & tomorrow.",
+    url: "https://www.pitcherlist.com/starting-pitcher-streamer-rankings-fantasy-baseball-7-23-7-24/",
+    urlToImage:
+      "https://www.pitcherlist.com/wp-content/uploads/2023/03/SP-Streamer-Ranks-Sunday.jpg",
+    publishedAt: "2023-07-23T16:49:10Z",
+    content:
+      "Here are today’s daily SP Streamer rankings.\r\nEvery day of the 2023 baseball season, I’ll be looking at today and tomorrow’s slate of scheduled starting pitchers and ranking their matchups for your f… [+12209 chars]",
+  },
+  {
+    source: {
+      id: null,
+      name: "Cyclingnews.com",
+    },
+    author: "Kirsten Frattini",
+    title:
+      "Cavalli questions SD Worx 'interrupting' tactics in Tour de France Femmes opener - Cyclingnews",
+    description:
+      "'It doesn't look fair, but it's cycling, and it's part of the game' says FDJ-SUEZ rider",
+    url: "https://www.cyclingnews.com/news/cavalli-questions-sd-worx-interrupting-tactics-in-tour-de-france-femmes-opener/",
+    urlToImage:
+      "https://cdn.mos.cms.futurecdn.net/ma6NkQrnvZhcEzfhs9WLoc-1200-80.jpg",
+    publishedAt: "2023-07-23T16:45:58Z",
+    content:
+      "Marta Cavalli (FDJ-SUEZ) questioned the tactics used by SD Worx among the chase group that formed behind solo winner Lotte Kopecky on the opening stage at the Tour de France Femmes. The Italian said … [+3242 chars]",
+  },
+  {
+    source: {
+      id: null,
+      name: "Sports Illustrated",
+    },
+    author: "Sports Illustrated",
+    title:
+      "Golf Fans Crushed NBC for Its Painful Final Round Coverage of the British Open - Sports Illustrated",
+    description: null,
+    url: "https://www.si.com/extra-mustard/2023/07/23/british-open-2023-nbc-sports-final-round-commercials-ripped-by-fans",
+    urlToImage: null,
+    publishedAt: "2023-07-23T16:13:25Z",
+    content: null,
+  },
+  {
+    source: {
+      id: null,
+      name: "MLB Trade Rumors",
+    },
+    author: "Nick Deeds",
+    title: "Yankees Notes: Outfield, Judge, Loaisiga - MLB Trade Rumors",
+    description:
+      "The Yankees shuffled their outfield mix today, optioning Oswaldo Cabrera and Franchy Cordero to the Triple-A while activating Greg Allen &hellip;",
+    url: "https://www.mlbtraderumors.com/2023/07/yankees-notes-outfield-judge-loaisiga.html",
+    urlToImage:
+      "https://cdn.mlbtraderumors.com/files/2023/04/USATSI_20552209-1024x683.jpg",
+    publishedAt: "2023-07-23T16:13:22Z",
+    content:
+      "The Yankees shuffled their outfield mix today, optioning Oswaldo Cabrera and Franchy Cordero to the Triple-A while activating Greg Allen and Jake Bauers from the 10-day injured list. Bauers has been … [+2366 chars]",
+  },
+  {
+    source: {
+      id: null,
+      name: "The Athletic",
+    },
+    author: "Patrick Mooney",
+    title:
+      "Dansby Swanson working to create winning culture as Cubs near trade deadline - The Athletic",
+    description:
+      "Swanson has had several conversations with the manager and front office execs about the Cubs' overall direction and how they can get better.",
+    url: "https://theathletic.com/4713114/2023/07/23/cubs-dansby-swanson-winning-culture-trade-deadline/",
+    urlToImage:
+      "https://cdn.theathletic.com/app/uploads/2023/07/22211608/GettyImages-1488916572-scaled.jpg",
+    publishedAt: "2023-07-23T16:02:04Z",
+    content:
+      "CHICAGO Dansby Swanson takes his responsibilities seriously, understanding the influence and the expectations that come with being an All-Star in the first season of a seven-year, $177 million contra… [+6134 chars]",
+  },
+  {
+    source: {
+      id: "cnn",
+      name: "CNN",
+    },
+    author: "Issy Ronald",
+    title:
+      "21-year-old French swimming star smashes Michael Phelps’ last remaining world record - CNN",
+    description:
+      "Although Michael Phelps retired seven years ago, his legacy – and world records – have towered over swimming ever since.",
+    url: "https://www.cnn.com/2023/07/23/sport/leon-marchand-michael-phelps-world-record-spt-intl/index.html",
+    urlToImage:
+      "https://media.cnn.com/api/v1/images/stellar/prod/230723105306-01-leon-marchand-world-aquatics-championship-0723.jpg?c=16x9&q=w_800,c_fill",
+    publishedAt: "2023-07-23T15:45:00Z",
+    content:
+      "Although Michael Phelps retired seven years ago, his legacy has continued to tower over swimming.\r\nBut on Saturday, Phelps last remaining world record was smashed by 21-year-old Leon Marchand at the … [+1412 chars]",
+  },
+  {
+    source: {
+      id: null,
+      name: "Sports Illustrated",
+    },
+    author: "Sports Illustrated",
+    title:
+      "Dodgers Considering Reunion With Red Sox Slugger At Trade Deadline - Sports Illustrated",
+    description: null,
+    url: "https://www.si.com/mlb/red-sox/news/dodgers-considering-reunion-with-red-sox-slugger-at-trade-deadline-scott7",
+    urlToImage: null,
+    publishedAt: "2023-07-23T15:39:01Z",
+    content: null,
+  },
+  {
+    source: {
+      id: null,
+      name: "CBS Sports",
+    },
+    author: "",
+    title:
+      "Alvin Kamara pleads no contest to misdemeanor charge in Las Vegas fight, felony charge dismissed - CBS Sports",
+    description: "Kamara is now subject to NFL punishment",
+    url: "https://www.cbssports.com/nfl/news/alvin-kamara-pleads-no-contest-to-misdemeanor-charge-in-las-vegas-fight-felony-charge-dismissed/",
+    urlToImage:
+      "https://sportshub.cbsistatic.com/i/r/2022/11/07/3e5a400f-74a0-46dc-99c1-425980f639c8/thumbnail/1200x675/1436d49f173142d0306f95efed6f623d/alvin-kamara-usatsi-saints-cbs.jpg",
+    publishedAt: "2023-07-11T21:55:00Z",
+    content:
+      "The saga involving Alvin Kamara and his role in the Las Vegas fight last year is almost over. Kamara pleaded no contest to a lesser misdemeanor charge from the Vegas altercation, dismissing his felon… [+2504 chars]",
+  },
+  {
+    source: {
+      id: null,
+      name: "YouTube",
+    },
+    author: null,
+    title:
+      '"I know him better" Jannik Sinner looks ahead to REMATCH against Djokovic | Wimbledon 2023 - Wimbledon',
+    description:
+      "Jannik Sinner booked his place in the Wimbledon semi-finals and a much-anticipated rematch with Novak Djokovic. The Italian feels he is in a better place to ...",
+    url: "https://www.youtube.com/watch?v=RsDBfWhkrEU",
+    urlToImage: "https://i.ytimg.com/vi/RsDBfWhkrEU/maxresdefault.jpg",
+    publishedAt: "2023-07-11T21:15:01Z",
+    content: null,
+  },
+  {
+    source: {
+      id: "espn",
+      name: "ESPN",
+    },
+    author: "Adam Rittenberg",
+    title:
+      "Northwestern football fired Coach Fitzgerald. What's next? - ESPN - ESPN",
+    description:
+      "On Monday, Northwestern fired Fitzgerald, the face of its football program, in the wake of a hazing scandal. A look at next steps.",
+    url: "https://www.espn.com/college-football/story/_/id/37995129/next-pat-fitzgerald-northwestern-football-hazing-fired",
+    urlToImage:
+      "https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2023%2F0711%2Fr1196598_1296x729_16%2D9.jpg",
+    publishedAt: "2023-07-11T20:55:00Z",
+    content:
+      "EVANSTON, Ill. -- Until Monday afternoon, Pat Fitzgerald had been the face of Northwestern football.\r\nHe was the program's most decorated player in the modern era, a key figure in the 1995 Rose Bowl … [+11329 chars]",
+  },
+  {
+    source: {
+      id: "espn",
+      name: "ESPN",
+    },
+    author: "Mark Schlabach",
+    title:
+      "Georgia's Kirby Smart 'first to admit' speeding issues continue - ESPN - ESPN",
+    description:
+      "With at least 11 traffic-related moving violations involving Georgia players since Jan. 15, Kirby Smart said he'd \"be the first to admit we haven't solved that issue.\"",
+    url: "https://www.espn.com/college-football/story/_/id/37995826/georgia-kirby-smart-first-admit-speeding-issues-continue",
+    urlToImage:
+      "https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2021%2F1201%2Fr945052_1296x729_16%2D9.jpg",
+    publishedAt: "2023-07-11T20:51:00Z",
+    content:
+      'ATHENS, Ga. -- Georgia football coach Kirby Smart said Tuesday that he hasn\'t yet solved the speeding issue that has plagued his team but that he is "constantly looking and searching" for ways to add… [+4030 chars]',
+  },
+  {
+    source: {
+      id: null,
+      name: "MLB.com",
+    },
+    author: "Sarah Wexler",
+    title:
+      "RHP Brady Smith highlights Dodgers' 10 picks on Day 2 of Draft - MLB.com",
+    description:
+      "Variety continued to be the name of the game for the Dodgers on their second day of the Draft, which included rounds 3-10, as well as two compensation picks following the fourth round. With those 10 selections, the Dodgers went with five pitchers, three infie…",
+    url: "https://www.mlb.com/news/dodgers-take-rhp-brady-smith-9-other-players-on-day-2-of-2023-mlb-draft",
+    urlToImage:
+      "https://img.mlbstatic.com/mlb-images/image/upload/t_2x1/t_w1536/mlb/oyqmbsoasr2u4mvk4ceg.jpg",
+    publishedAt: "2023-07-11T20:40:08Z",
+    content:
+      "Variety continued to be the name of the game for the Dodgers on their second day of the Draft, which included rounds 3-10, as well as two compensation picks following the fourth round. With those 10 … [+5914 chars]",
+  },
+  {
+    source: {
+      id: "espn",
+      name: "ESPN",
+    },
+    author: "Mike Reiss",
+    title:
+      "Patriots unveil massive new video board at Gillette Stadium - ESPN - ESPN",
+    description:
+      "The Patriots unveiled a new video board, which they touted as the largest at an outside stadium in the country, on Tuesday.",
+    url: "https://www.espn.com/nfl/story/_/id/37995777/patriots-unveil-massive-new-video-board-gillette-stadium",
+    urlToImage:
+      "https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2023%2F0711%2Fr1196653_1296x729_16%2D9.jpg",
+    publishedAt: "2023-07-11T20:33:00Z",
+    content:
+      "FOXBOROUGH, Mass. -- The New England Patriots hope their new offense makes as striking of a first impression as the record-breaking video board unveiled Tuesday.\r\nOfficials touted the new video board… [+1677 chars]",
+  },
+  {
+    source: {
+      id: null,
+      name: "ATP Tour",
+    },
+    author: "ATP Tour",
+    title:
+      "Andrey Rublev On Novak Djokovic: 'I Feel Like He's Playing Better & Better' - ATP Tour",
+    description:
+      "Rublev On Djokovic: 'I Feel Like He's Playing Better & Better'",
+    url: "https://www.atptour.com/en/news/rublev-wimbledon-2023-qf-reaction",
+    urlToImage:
+      "https://www.atptour.com/-/media/images/news/2023/07/11/20/13/djokovic-rublev-wimbledon-2023-qf-handshake.jpg",
+    publishedAt: "2023-07-11T20:22:45Z",
+    content:
+      "There was good news and bad news for Andrey Rublev on Tuesday at Wimbledon. The good news was that he felt prepared for his first quarter-final at The Championships. The bad news was that he faced se… [+2465 chars]",
+  },
+  {
+    source: {
+      id: null,
+      name: "Cyclingnews.com",
+    },
+    author: "Barry Ryan",
+    title:
+      "'It was all in bits' on Tour de France stage 10 as Vingegaard, Pogacar battle sizzles - Cyclingnews",
+    description:
+      "No post-rest-day respite for peloton on intense day in the Massif Central",
+    url: "https://www.cyclingnews.com/news/full-gas-racing-on-tour-de-france-stage-10-as-vingegaard-pogacar-battle-sizzles/",
+    urlToImage:
+      "https://cdn.mos.cms.futurecdn.net/vu5NKy9Xdq6xPTwtsr79kg-1200-80.jpg",
+    publishedAt: "2023-07-11T20:07:40Z",
+    content:
+      '"Every Tour has a day like this," Wout van Aert said after he had finished cooling down outside the Jumbo-Visma team bus in Issoire after stage 10. Maybe, but it\'s hard to shake off the impression th… [+6182 chars]',
+  },
+  {
+    source: {
+      id: null,
+      name: "YouTube",
+    },
+    author: null,
+    title:
+      "Alexander Volkanovski: 'Get Me Back in There ASAP' | UFC 290 - UFC - Ultimate Fighting Championship",
+    description:
+      "Reigning featherweight king Alexander Volkanovski spoke with UFC's McKenzie Pavacich following his main event title defense win over Yair Rodriguez on Saturd...",
+    url: "https://www.youtube.com/watch?v=kRwZJBJZN94",
+    urlToImage: "https://i.ytimg.com/vi/kRwZJBJZN94/maxresdefault.jpg",
+    publishedAt: "2023-07-11T20:00:26Z",
+    content: null,
+  },
+  {
+    source: {
+      id: "espn",
+      name: "ESPN",
+    },
+    author: null,
+    title:
+      "Novak Djokovic ties Roger Federer, makes 46th Slam semifinal - ESPN - ESPN",
+    description:
+      "Novak Djokovic tied Roger Federer's record of 46 men's Grand Slam semifinals by getting to that round at Wimbledon with a 4-6, 6-1, 6-4, 6-3 victory over Andrey Rublev on Tuesday.",
+    url: "https://www.espn.com/tennis/story/_/id/37995421/novak-djokovic-ties-roger-federer-makes-46th-slam-semifinal",
+    urlToImage:
+      "https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2023%2F0711%2Fr1196641_1296x729_16%2D9.jpg",
+    publishedAt: "2023-07-11T19:33:00Z",
+    content:
+      "Jul 11, 2023, 03:33 PM ET\r\nWIMBLEDON, England -- As Novak Djokovic pursues more history-making victories and more milestones, he is well aware that every opponent he faces would love nothing more tha… [+2970 chars]",
+  },
+  {
+    source: {
+      id: null,
+      name: "The Athletic",
+    },
+    author: "Larry Holder",
+    title:
+      "Patrick Mahomes, Joe Burrow, Josh Allen even atop NFL MVP odds. But where’s Jalen Hurts? - The Athletic",
+    description:
+      "How do the other NFL awards races stack up leading into training camp?",
+    url: "https://theathletic.com/4682864/2023/07/11/nfl-mvp-patrick-mahomes-joe-burrow-josh-allen/",
+    urlToImage:
+      "https://cdn.theathletic.com/app/uploads/2023/07/11113826/GettyImages-1460659526-scaled.jpg",
+    publishedAt: "2023-07-11T19:23:33Z",
+    content:
+      "Frontrunners in the 2023 NFL MVP race? Look to the AFC as the Chiefs Patrick Mahomes, the Bengals Joe Burrow and the Bills Josh Allen are tied atop the latest odds for the award, via BetMGM, as of Tu… [+2489 chars]",
+  },
+  {
+    source: {
+      id: null,
+      name: "CBS Sports",
+    },
+    author: "",
+    title:
+      "Ranking five AFC quarterbacks under the most pressure in 2023: Aaron Rodgers looking to end long Jets drought - CBS Sports",
+    description:
+      "These five QBs are under pressure for different reasons in 2023",
+    url: "https://www.cbssports.com/nfl/news/ranking-five-afc-quarterbacks-under-the-most-pressure-in-2023-aaron-rodgers-looking-to-end-long-jets-drought/",
+    urlToImage:
+      "https://sportshub.cbsistatic.com/i/r/2022/11/19/4f713953-1caa-4e67-bd6c-176c664930f1/thumbnail/1200x675/fda5c298e7b8f4f0a58d2830df9605a1/russell-wilson-usatsi-broncos-2.jpg",
+    publishedAt: "2023-07-11T19:13:00Z",
+    content:
+      "The AFC has been established as the dominant conference, and a big reason why is because of the quarterbacks. Patrick Mahomes, Joe Burrow and Josh Allen are the three favorites to win MVP, Lamar Jack… [+7859 chars]",
+  },
+  {
+    source: {
+      id: "espn",
+      name: "ESPN",
+    },
+    author: null,
+    title:
+      "Cardinals star Nolan Arenado prepared for trade possibility - ESPN - ESPN",
+    description:
+      "Cardinals third baseman Nolan Arenado knows that despite his All-Star status, he could be on the chopping block just like anyone else as the trade deadline approaches.",
+    url: "https://www.espn.com/mlb/story/_/id/37995415/cardinals-star-nolan-arenado-prepared-trade-possibility",
+    urlToImage:
+      "https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2023%2F0711%2Fr1196628_1296x729_16%2D9.jpg",
+    publishedAt: "2023-07-11T19:13:00Z",
+    content:
+      "Jul 11, 2023, 03:13 PM ET\r\nSt. Louis Cardinals All-Star third baseman Nolan Arenado knows that despite his superstar status, he could be on the chopping block just like anyone else as the trade deadl… [+1319 chars]",
+  },
+  {
+    source: {
+      id: "nhl-news",
+      name: "NHL News",
+    },
+    author: "Press Release",
+    title:
+      "Predators Sign Denis Gurianov to One-Year, $850,000 Contract - NHL.com",
+    description:
+      "Nashville, Tenn. (July 11, 2023) - Nashville Predators General Manager Barry Trotz announced today that the team has signed forward Denis Gurianov to a one-year, $850,000 contract.",
+    url: "https://www.nhl.com/predators/news/predators-sign-denis-gurianov-to-one-year-850000-contract/c-345306536",
+    urlToImage:
+      "https://cms.nhl.bamgrid.com/images/photos/345306656/1024x576/cut.jpg",
+    publishedAt: "2023-07-11T19:00:18Z",
+    content:
+      "Nashville, Tenn. (July 11, 2023) - Nashville Predators General Manager Barry Trotz announced today that the team has signed forward Denis Gurianov to a one-year, $850,000 contract.Gurianov, 26 (6/7/9… [+1493 chars]",
+  },
+  {
+    source: {
+      id: null,
+      name: "YouTube",
+    },
+    author: null,
+    title:
+      "Elina Svitolina: Quarter-Finals Press Conference | Wimbledon 2023 - Wimbledon",
+    description:
+      "After knocking out the world No.1 for a place in the semi-finals, the Ukrainian appreciates the incredible support from the British fans as well as those bac...",
+    url: "https://www.youtube.com/watch?v=5m2L3ZiZp5Q",
+    urlToImage: "https://i.ytimg.com/vi/5m2L3ZiZp5Q/maxresdefault.jpg",
+    publishedAt: "2023-07-11T19:00:05Z",
+    content: null,
+  },
+  {
+    source: {
+      id: null,
+      name: "Yahoo Entertainment",
+    },
+    author: "Yahoo Sports Fantasy Staff",
+    title: "2023 Fantasy Football: Defense draft rankings - Yahoo Sports",
+    description:
+      "Check out our initial batch of fantasy football defense rankings for 2023 draft season!",
+    url: "https://sports.yahoo.com/2023-fantasy-football-defense-draft-rankings-184644329.html",
+    urlToImage:
+      "https://s.yimg.com/ny/api/res/1.2/3470l2OxxZw8ju0P8p8ZBA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2023-07/600b0bd0-1f77-11ee-be7e-3799716ac653",
+    publishedAt: "2023-07-11T18:49:10Z",
+    content:
+      "While the D/ST spot might get overlooked in many fantasy football draft circles, most cannot deny that it could be a difference-making position on a week-to-week basis.\r\nIf you're down by 20 points h… [+803 chars]",
+  },
+  {
+    source: {
+      id: null,
+      name: "CBS Sports",
+    },
+    author: "",
+    title:
+      "MLB expansion talks could happen 'pretty shortly' after Rays, A's stadium disputes settled, says Rob Manfred - CBS Sports",
+    description:
+      "Oakland has already started its relocation paperwork to prepare for the move to Las Vegas",
+    url: "https://www.cbssports.com/mlb/news/mlb-expansion-talks-could-happen-pretty-shortly-after-rays-as-stadium-disputes-settled-says-rob-manfred/",
+    urlToImage:
+      "https://sportshub.cbsistatic.com/i/r/2023/07/11/5b083482-c40e-4415-8e67-f3a9e6878a7c/thumbnail/1200x675/e307bce79bd3f4d3ea68645b64b15ec3/manfred-getty.png",
+    publishedAt: "2023-07-11T18:38:00Z",
+    content:
+      'Major League Baseball intends to explore potential expansion to 32 teams "pretty soon" after the Tampa Bay Rays and Oakland Athletics have resolved their stadium situations, commissioner Rob Manfred … [+1543 chars]',
+  },
+  {
+    source: {
+      id: null,
+      name: "YouTube",
+    },
+    author: null,
+    title:
+      "Tour de France 2023: Stage 10 | EXTENDED HIGHLIGHTS | 7/11/2023 | Cycling on NBC Sports - NBC Sports",
+    description:
+      "Watch highlights from Stage 10 of the 2023 Tour de France, where riders were forced to deal with uphill terrains en route from Vulcania to Issoire. #NBCSport...",
+    url: "https://www.youtube.com/watch?v=PLnbKwc9vSE",
+    urlToImage: "https://i.ytimg.com/vi/PLnbKwc9vSE/maxresdefault.jpg",
+    publishedAt: "2023-07-11T18:31:00Z",
+    content: null,
+  },
+  {
+    source: {
+      id: null,
+      name: "CBS Sports",
+    },
+    author: "",
+    title:
+      "MLBPA wants more time on pitch clock during postseason, but Rob Manfred isn't sure about changing rules again - CBS Sports",
+    description:
+      "MLB already gets rid of the automatic runner at second in extra innings during the playoffs",
+    url: "https://www.cbssports.com/mlb/news/mlbpa-wants-more-time-on-pitch-clock-during-postseason-but-rob-manfred-isnt-sure-about-changing-rules-again/",
+    urlToImage:
+      "https://sportshub.cbsistatic.com/i/r/2023/07/11/14d6c173-c908-4326-97b4-93480c7be885/thumbnail/1200x675/e4d19f2de5d62faa8a44a93f1012e081/clock-getty.png",
+    publishedAt: "2023-07-11T18:26:37Z",
+    content:
+      'The MLB Players Association would like to add "a few extra seconds" to the pitch clock during the postseason, Tony Clark, the head of the union, told reporters (including Pete Abraham of the Boston G… [+1669 chars]',
+  },
+  {
+    source: {
+      id: "espn",
+      name: "ESPN",
+    },
+    author: "Alyssa Roenigk",
+    title:
+      "Wimbledon 2023 - Takeaways from No. 1 Iga Swiatek's surprising loss to Elina Svitolina - ESPN - ESPN",
+    description:
+      "Iga Swiatek came into Wimbledon as a favorite to win -- but grass once again proved to be her downfall. Here's what it means for her and the tournament.",
+    url: "https://www.espn.com/tennis/story/_/id/37984926/wimbledon-2023-takeaways-no-1-iga-swiatek-surprising-loss-elina-svitolina",
+    urlToImage:
+      "https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2023%2F0711%2Fr1196527_1296x729_16%2D9.jpg",
+    publishedAt: "2023-07-11T18:15:00Z",
+    content:
+      "LONDON -- Tuesday's quarterfinal between Elina Svitolina and world No. 1 Iga Swiatek was a stunner -- for both women. Swiatek is out of Wimbledon after looking like a potential tournament winner, and… [+5577 chars]",
+  },
+  {
+    source: {
       id: "usa-today",
       name: "USA Today",
     },

@@ -1,13 +1,20 @@
 import React, { useEffect, useState } from "react";
 import moment from "moment";
 import headlines from "../testArticles";
+import { Link } from "react-router-dom";
 
 function ArticleLayout(props) {
+  const categoryArticles = props.categoryArticles;
+
   console.log(props);
 
-  const randomInt = function randomIntFromInterval(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  };
+  const [bonusArticles, setBonusArticles] = useState([]);
+  const [category, setCategory] = useState(props.category);
+  const [random1, setRandom1] = useState({});
+  const [random2, setRandom2] = useState({});
+  const [catArticles, setCategoryArticles] = useState(categoryArticles);
+  const [urlToImage1, setUrlToImage1] = useState("");
+
   return (
     <div className="container mainArticleContainer">
       <div className="row">
@@ -26,10 +33,32 @@ function ArticleLayout(props) {
         </div>
         <div className="col-lg-3">
           <span>More Top Stories</span>
-          <img style={{ width: "100%" }} src={headlines[0].urlToImage} />
-          <p>{headlines[0].title}</p>
-          <img style={{ width: "100%" }} src={headlines[1].urlToImage} />
-          <p>{headlines[1].title}</p>
+          <Link
+            className="link"
+            // to={
+            //   props.category +
+            //   "/articles/" +
+            //   props.randomArticle1.publishedAt.substring(8, 19)
+            // }
+          >
+            <img
+              style={{ width: "100%" }}
+              src={props.randomArticle1.urlToImage}
+            />
+            <p>{props.randomArticle1.title}</p>
+          </Link>
+          <Link
+            className="link"
+            to={
+              "/${props.category}/articles/${props.randomArticle1.publishedAt.substring(8, 19)}"
+            }
+          >
+            <img
+              style={{ width: "100%" }}
+              src={props.randomArticle2.urlToImage}
+            />
+            <p>{props.randomArticle2.title}</p>
+          </Link>
         </div>
       </div>
       <div className="row articleContent">

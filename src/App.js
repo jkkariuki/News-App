@@ -9,9 +9,16 @@ import ArticlePage from "./pages/ArticlePage";
 import Sports from "./pages/Sports";
 import Technology from "./pages/Technology";
 import Business from "./pages/Business";
+import Entertainment from "./pages/EntertainmentPage";
 
 function App() {
-  const categories = ["top-news", "sports", "technology", "business"];
+  const categories = [
+    "top stories",
+    "sports",
+    "technology",
+    "business",
+    "entertainment",
+  ];
 
   return (
     <BrowserRouter>
@@ -30,6 +37,10 @@ function App() {
           <Route
             path="/business"
             element={<Business category={categories[3]} />}
+          />
+          <Route
+            path="/entertainment"
+            element={<Entertainment category={categories[4]} />}
           />
 
           <Route

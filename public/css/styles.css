@@ -1,4 +1,11 @@
-
+ body{
+    font-family: 'News Cycle', sans-serif;
+ }
+ h1, h4{
+    
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 700;
+ }
 .logo{
     height:50px;
     /* display:inline-block; */

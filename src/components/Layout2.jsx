@@ -24,6 +24,16 @@ function Layout2(props) {
             }
           >
             <h1>{articles[0].title}</h1>
+          </Link>
+          <Link
+            className="link"
+            to={
+              "/" +
+              props.category +
+              "/articles/" +
+              articles[0].publishedAt.substring(8, 19)
+            }
+          >
             <img className="smallImgs" src={articles[0].urlToImage} />
             <h4>
               {articles[0].description}
