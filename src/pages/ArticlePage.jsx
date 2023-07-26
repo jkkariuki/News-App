@@ -15,22 +15,26 @@ function ArticlePage() {
   const [articlesInCategory, setArticlesInCategory] = useState([]);
   const [randomArticle1, setRandomArticle1] = useState({});
   const [randomArticle2, setRandomArticle2] = useState({});
+  const [randomArticle1Id, setRandomArticle1Id] = useState("");
+  const [randomArticle2Id, setRandomArticle2Id] = useState("");
 
   useEffect(() => {
-    console.log("PARAMS:" + articleId.id);
     let main;
     let random1;
     let random2;
+    let random1Id;
+    let random2Id;
 
     switch (category) {
       case "top stories":
         setArticlesInCategory(headlines);
 
         random1 = headlines[headlines.length - 1];
+        random1Id = random1.publishedAt.substring(8, 19);
 
         random2 = headlines[headlines.length - 2];
-        console.log(random1);
-        console.log(random2);
+        random2Id = random2.publishedAt.substring(8, 19);
+
         main = headlines.find((headline) => {
           return headline.publishedAt.substring(8, 19) === articleId.id;
         });
@@ -39,8 +43,10 @@ function ArticlePage() {
       case "sports":
         setArticlesInCategory(sportsHeadlines);
         random1 = sportsHeadlines[sportsHeadlines.length - 1];
+        random1Id = random1.publishedAt.substring(8, 19);
 
         random2 = sportsHeadlines[sportsHeadlines.length - 2];
+        random2Id = random2.publishedAt.substring(8, 19);
 
         main = sportsHeadlines.find((headline) => {
           return headline.publishedAt.substring(8, 19) === articleId.id;
@@ -51,7 +57,10 @@ function ArticlePage() {
         setArticlesInCategory(techArticles);
 
         random1 = techArticles[techArticles.length - 1];
+        random1Id = random1.publishedAt.substring(8, 19);
+
         random2 = techArticles[techArticles.length - 2];
+        random2Id = random2.publishedAt.substring(8, 19);
 
         main = techArticles.find((headline) => {
           return headline.publishedAt.substring(8, 19) === articleId.id;
@@ -61,8 +70,10 @@ function ArticlePage() {
       case "business":
         setArticlesInCategory(businessArticles);
         random1 = businessArticles[businessArticles.length - 1];
+        random1Id = random1.publishedAt.substring(8, 19);
 
         random2 = businessArticles[businessArticles.length - 2];
+        random2Id = random2.publishedAt.substring(8, 19);
 
         main = businessArticles.find((headline) => {
           return headline.publishedAt.substring(8, 19) === articleId.id;
@@ -72,8 +83,10 @@ function ArticlePage() {
       case "entertainment":
         setArticlesInCategory(entertainmentArticles);
         random1 = entertainmentArticles[entertainmentArticles.length - 1];
+        random1Id = random1.publishedAt.substring(8, 19);
 
         random2 = entertainmentArticles[entertainmentArticles.length - 2];
+        random2Id = random2.publishedAt.substring(8, 19);
 
         main = entertainmentArticles.find((headline) => {
           return headline.publishedAt.substring(8, 19) === articleId.id;
@@ -82,7 +95,9 @@ function ArticlePage() {
     }
     setArticle(main);
     setRandomArticle1(random1);
+    setRandomArticle1Id(random1Id);
     setRandomArticle2(random2);
+    setRandomArticle2Id(random2Id);
   });
   return (
     <div>
@@ -91,6 +106,8 @@ function ArticlePage() {
         category={category}
         categoryArticles={articlesInCategory}
         randomArticle1={randomArticle1}
+        randomArticle1Id={randomArticle1Id}
+        randomArticle2Id={randomArticle2Id}
         randomArticle2={randomArticle2}
       />
     </div>

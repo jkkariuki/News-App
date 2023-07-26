@@ -6,14 +6,13 @@ import { Link } from "react-router-dom";
 function ArticleLayout(props) {
   const categoryArticles = props.categoryArticles;
 
-  console.log(props);
-
   const [bonusArticles, setBonusArticles] = useState([]);
   const [category, setCategory] = useState(props.category);
   const [random1, setRandom1] = useState({});
   const [random2, setRandom2] = useState({});
   const [catArticles, setCategoryArticles] = useState(categoryArticles);
   const [urlToImage1, setUrlToImage1] = useState("");
+  const [randomLink1, setRandomLink1] = useState("");
 
   return (
     <div className="container mainArticleContainer">
@@ -35,11 +34,7 @@ function ArticleLayout(props) {
           <span>More Top Stories</span>
           <Link
             className="link"
-            // to={
-            //   props.category +
-            //   "/articles/" +
-            //   props.randomArticle1.publishedAt.substring(8, 19)
-            // }
+            to={"/" + props.category + "/articles/" + props.randomArticle1Id}
           >
             <img
               style={{ width: "100%" }}
@@ -49,9 +44,7 @@ function ArticleLayout(props) {
           </Link>
           <Link
             className="link"
-            to={
-              "/${props.category}/articles/${props.randomArticle1.publishedAt.substring(8, 19)}"
-            }
+            to={"/" + props.category + "/articles/" + props.randomArticle2Id}
           >
             <img
               style={{ width: "100%" }}

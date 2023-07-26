@@ -7,27 +7,21 @@ import moment from "moment/moment";
 import { Link } from "react-router-dom";
 
 function Layout1(props) {
-  console.log("props: " + JSON.stringify(props));
   const [headlines, setHeadlines] = useState(props.articles);
   const pageHeading =
     props.category.charAt(0).toUpperCase() + props.category.slice(1);
-  //   const [fourToEight, setFourToEight] = useState([]);
-  //   const [nineToThirtn, setNineToThirtn] = useState();
-  //   const [fourTnToEightn, setFourtnToEightn] = useState();
 
   var fourToEight = [];
   var nineToThirtn = [];
   var fourTnToEightn = [];
 
   function setOtherArticles() {
-    // const fourEight = ;
     fourToEight = headlines.slice(3, 8);
     nineToThirtn = headlines.slice(9, 15);
     fourTnToEightn = headlines.slice(16, 21);
   }
 
   setOtherArticles();
-  console.log("FOURTOEIGHT " + fourToEight);
 
   return (
     <div className="container mainContentSection">

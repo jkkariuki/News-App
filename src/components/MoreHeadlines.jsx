@@ -1,11 +1,9 @@
 import React from "react";
 import tree from "../imgs/randomtree.jpg";
-// import headlines from "../testArticles";
 import { Link } from "react-router-dom";
 
 function MoreHeadlines(props) {
   let headlines = props.headlines;
-  console.log(headlines);
 
   return (
     <div className="container">

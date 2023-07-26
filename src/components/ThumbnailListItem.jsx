@@ -6,7 +6,6 @@ function ThumbnailListItem(props) {
   const [articles, setArticles] = useState(props.articles);
   const [rangeMin, setRangeMin] = useState(props.range.x);
   const [rangeMax, setRangeMax] = useState(props.range.y);
-  // console.log(props);
   return (
     <div>
       {articles.map((article, i) => {
