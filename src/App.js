@@ -19,11 +19,64 @@ function App() {
     "business",
     "entertainment",
   ];
+  const [weatherNumbers, setWeatherNumbers] = useState({});
+  const [temp, setTemp] = useState();
+  const [weatherDescriptions, setWeatherDescriptions] = useState({});
+  const [townName, setTownName] = useState("");
 
+  // const tempConversion = (kelvin) => {
+  //   console.log(fahrenheit);
+  //   return fahrenheit;
+  // };
+
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition((position) => {
+      console.log(position.coords);
+
+      let temperature;
+      let longitude = position.coords.longitude.toFixed(2);
+      let latitude = position.coords.latitude.toFixed(2);
+      console.log(longitude);
+      console.log(latitude);
+      const getWeather = async () => {
+        let response;
+
+        try {
+          response = await axios.get(
+            "https://api.openweathermap.org/data/2.5/weather?lat=" +
+              latitude +
+              "&lon=" +
+              longitude +
+              "&appid=8cc1e5af0f25a81fb616001eac96ccce"
+          );
+          console.log(response);
+          return response;
+        } catch (e) {
+          throw new Error(e.message);
+        }
+      };
+      getWeather().then((res) => {
+        console.log(res);
+        temperature = res.data.main.temp;
+        let fahrenheit = (((temperature - 273.15) * 9) / 5 + 32).toFixed(1);
+        console.log(fahrenheit);
+        setTemp(fahrenheit);
+
+        setWeatherNumbers(res.data.main);
+        setWeatherDescriptions(res.data.weather);
+        setTownName(res.data.name);
+      });
+    });
+  }, []);
   return (
     <BrowserRouter>
       <div className="App">
-        <Nav />
+        <Nav
+          weatherNumbers={weatherNumbers}
+          temp={temp}
+          weatherDescriptions={weatherDescriptions}
+          townName={townName}
+        />
         <Routes>
           <Route
             path="/"

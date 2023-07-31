@@ -8,8 +8,13 @@
  }
 .logo{
     height:50px;
+    margin-right: 20px;
     /* display:inline-block; */
    
+}
+
+.navbar-toggler{
+    display: none;
 }
 .navigation{
     margin: 0 auto;
@@ -41,6 +46,11 @@ nav form{
     margin: auto auto;
 }
 
+.weatherData{
+    color: white;
+    margin-right: 20px;
+}
+
 
 .menuList{
     display: block;
@@ -48,6 +58,9 @@ nav form{
 }
 
 @media screen and (max-width: 515px) {
+    .navbar-toggler{
+        display: block;
+    }
     .navList{
       display: none;
     }
@@ -66,9 +79,12 @@ nav form{
   }
 
   @media screen and (max-width: 775px) {
-    /* .navList{
+    .navbar-toggler{
+        display: block;
+    }
+    .navList{
       display: none;
-    } */
+    }
 
     nav form{
         width: 100%;
@@ -84,7 +100,7 @@ nav form{
   }
 
   @media screen and (max-width: 1075px) {
-    /* .navList{
+    /* .navbarToggleExternalContent{
       display: none;
     } */
 

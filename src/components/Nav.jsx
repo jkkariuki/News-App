@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../imgs/Red Modern Label Logo.png";
 
-function Nav() {
+function Nav(props) {
   return (
     <div className="navigation">
       <nav class="navbar navbar-dark bg-dark">
@@ -16,8 +16,8 @@ function Nav() {
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <img className="mr-auto logo" src={logo} />
+
         <ul class="navbar mx-auto  nav navList">
           <li class="nav-item active">
             <a class="nav-link" href="/">
@@ -54,17 +54,10 @@ function Nav() {
           </li>
           <div class="vr"></div>
         </ul>
-        <form class="navSearch">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
+
+        <span className="weatherData">
+          {props.temp}°F {props.townName}
+        </span>
       </nav>
       <div
         class="collapse navbarToggleExternalContent"
@@ -73,35 +66,35 @@ function Nav() {
         <div class="bg-dark p-4 navExternalContent">
           <ul class="navbar nav menuList">
             <li class="nav-item active">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="/">
                 US
               </a>
             </li>
             <div class="vr"></div>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="/technology">
                 Technology
               </a>
             </li>
             <div class="vr"></div>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="/sports">
                 Sports
               </a>
             </li>
             <div class="vr"></div>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">
-                Real Estate
+              <a class="nav-link" href="/business">
+                Business
               </a>
             </li>
             <div class="vr"></div>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="/entertainment">
                 Entertainment
               </a>
             </li>
