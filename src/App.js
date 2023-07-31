@@ -24,12 +24,8 @@ function App() {
   const [weatherDescriptions, setWeatherDescriptions] = useState({});
   const [townName, setTownName] = useState("");
 
-  // const tempConversion = (kelvin) => {
-  //   console.log(fahrenheit);
-  //   return fahrenheit;
-  // };
-
   useEffect(() => {
+    console.log(process.env.REACT_APP_WEATHER_KEY);
     navigator.geolocation.getCurrentPosition((position) => {
       console.log(position.coords);
 
@@ -47,7 +43,8 @@ function App() {
               latitude +
               "&lon=" +
               longitude +
-              "&appid=8cc1e5af0f25a81fb616001eac96ccce"
+              "&appid=" +
+              process.env.REACT_APP_WEATHER_KEY
           );
           console.log(response);
           return response;
