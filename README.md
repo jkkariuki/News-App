@@ -5,8 +5,9 @@ This is a simple news site with articles being sourced from NewsApi.org.
 The site also uses the Open Weather Api in conjuction with the Javascript API navigator.geolocation to get the user's local weather data.
 User must allow access to their location for the this feature to work.
 
-Coming Soon
+Coming Soon:
 Search articles by keyword.
+Sign up for Newsletter.
 Full Weather details and forecasts page
 
 👉 Live Demo: (https://jk-newsapp-c6afecd0057f.herokuapp.com)
