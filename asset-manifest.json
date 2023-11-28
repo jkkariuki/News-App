@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/news-app/static/js/main.52540e3f.js",
+    "static/media/randomtree.jpg": "/news-app/static/media/randomtree.244ff4be7ad5b3f568ad.jpg",
+    "index.html": "/news-app/index.html",
+    "main.52540e3f.js.map": "/news-app/static/js/main.52540e3f.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.52540e3f.js"
+  ]
+}
